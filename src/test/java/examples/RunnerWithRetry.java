@@ -1,4 +1,4 @@
-package examples.users;
+package examples;
 import com.intuit.karate.Runner;
 import com.intuit.karate.Results;
 import org.junit.jupiter.api.Assertions;
@@ -30,3 +30,5 @@ public class RunnerWithRetry {
                 "❌ Some tests still failed after " + (retryCount + 1) + " attempts.");
     }
 }
+
+

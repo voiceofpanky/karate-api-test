@@ -40,3 +40,15 @@ public class RerunUtils {
         return Collections.emptyList();
     }
 }
+
+// If you want to skip passing tests on next Gradle run, modify your runner to check if a rerun.txt exists and only run those tests automatically:
+
+// List<String> failedFeatures = RerunUtils.getFailedFeatures();
+// Results results;
+
+// if (!failedFeatures.isEmpty()) {
+//     System.out.println("🧠 Running only previously failed tests: " + failedFeatures);
+//     results = Runner.path(failedFeatures).parallel(3);
+// } else {
+//     results = Runner.path("classpath:examples/users").parallel(3);
+// }
