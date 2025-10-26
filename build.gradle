@@ -2,28 +2,41 @@ plugins {
     id 'java'
 }
 
-repositories {
-    mavenCentral()
-}
+group = 'com.example'
+version = '1.0-SNAPSHOT'
 
-dependencies {
-    testImplementation 'com.intuit.karate:karate-junit5:1.5.0'
-}
-
-test {
-    useJUnitPlatform()
-}plugins {
-    id 'java'
-}
+//sourceCompatibility = '24'
+//targetCompatibility = '24'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'com.intuit.karate:karate-junit5:1.5.0'
+    testImplementation 'com.intuit.karate:karate-junit5:1.3.1'
+    testImplementation 'io.qameta.allure:allure-karate:2.24.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    testImplementation 'org.junit.platform:junit-platform-suite-engine:1.10.0'
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.1'
 }
 
 test {
     useJUnitPlatform()
+    //systemProperty 'allure.results.directory', 'target/allure-results'
+    // Optional: specify test class if needed
+     include '**/runner/KarateRunner.java'
 }
+
+//tasks.withType(Test) {
+    // Optional: if you want to run a specific method
+    // useJUnitPlatform {
+    //     includeTags 'testAll'
+    // }
+//}
+
+// tasks.register('allureReport') {
+//     doLast {
+//         println 'Allure report generation should be handled via CLI or plugin integration.'
+//     }
+// }

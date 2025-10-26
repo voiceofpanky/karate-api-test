@@ -1,3 +1,4 @@
+@smoke
 Feature: Sample API test with Karate
 
   Background:

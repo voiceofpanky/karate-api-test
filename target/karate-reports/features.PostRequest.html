@@ -1,0 +1,5651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b650fc1e-5777-4820-b239-b1e79a77b86d",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.PostRequest</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">10</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-10-26 10:50:21 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:26]"><span>[1:26]</span> <span>Tha API response should be HTTP 201 Created</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:33]"><span>[2:33]</span> <span>The API response body matches the JSON Schema</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.1:49]"><span>[3.1:49]</span> <span>The userId value is accept positive Integer</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.2:50]"><span>[3.2:50]</span> <span>The userId value is accept negative Integer</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3.3:51]"><span>[3.3:51]</span> <span>The userId value is accept zero Integer</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.1:65]"><span>[4.1:65]</span> <span>The API response body has a valid key value as inputed payload</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.2:66]"><span>[4.2:66]</span> <span>The API response body has a valid key value as inputed payload</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.3:67]"><span>[4.3:67]</span> <span>The API response body has a valid key value as inputed payload</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.4:68]"><span>[4.4:68]</span> <span>The API response body has a valid key value as inputed payload</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.5:69]"><span>[4.5:69]</span> <span>The API response body has a valid key value as inputed payload</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.6:70]"><span>[4.6:70]</span> <span>The API response body has a valid key value as inputed payload</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5.1:97]"><span>[5.1:97]</span> <span>The &quot;title&quot; value accept &quot;non-empty&quot; String and &quot;body&quot; value accept &quot;non-empty&quot; String</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5.2:98]"><span>[5.2:98]</span> <span>The &quot;title&quot; value accept &quot;empty&quot; String and &quot;body&quot; value accept &quot;non-empty&quot; String</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5.3:99]"><span>[5.3:99]</span> <span>The &quot;title&quot; value accept &quot;non-empty&quot; String and &quot;body&quot; value accept &quot;empty&quot; String</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5.4:100]"><span>[5.4:100]</span> <span>The &quot;title&quot; value accept &quot;empty&quot; String and &quot;body&quot; value accept &quot;empty&quot; String</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/PostRequest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing POST API</span>
+          <span class="feature-description">As a QA,
+    I want to validate the API is meet the requirement</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">HttpStatus</a><a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:26]</span>
+                <span class="scenario-name">Tha API response should be HTTP 201 Created</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6354</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request defaultPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">182</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6098</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">10:50:12.685 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;userId&quot;:12,&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;}
+
+10:50:12.955 response time in milliseconds: 268
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;54-guyfh1GBRGEJVEsIwiIzWJqpZa0&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501012&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501012&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 997
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=69
+1 &lt; CF-RAY: 994bcb720b180fd4-LAX
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;userId&quot;: 12,
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">SchemaValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:33]</span>
+                <span class="scenario-name">The API response body matches the JSON Schema</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>211</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref failed">34</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def expectedSchema = read(&quot;../helper/PostSchema.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">202</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">10:50:06.846 classpath:features/PostRequest.feature:34
+* def expectedSchema = read(&quot;../helper/PostSchema.json&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&quot;../helper/PostSchema.json&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\PANKAJ KUMAR SAO\poc\karate-api-test\build\resources\test\features\..\helper\PostSchema.json (The system cannot find the path specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/PostRequest.feature:34
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref skipped">35</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref skipped">36</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request defaultPayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response == expectedSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">VariableBoundaryValidation</a><a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:49]</span>
+                <span class="scenario-name">The userId value is accept positive Integer</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6173</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:49]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6154</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.44">10:50:12.677 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}
+
+10:50:13.044 response time in milliseconds: 366
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;54-3s8W8w2GxPo0WXYdWfItyVF0+Ng&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501012&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501012&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=11,cfOrigin;dur=70
+1 &lt; CF-RAY: 994bcb71af016d29-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;userId&quot;: 12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.userId == &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.2:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">VariableBoundaryValidation</a><a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.2:50]</span>
+                <span class="scenario-name">The userId value is accept negative Integer</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5935</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.2:50]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.2:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.2:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:-12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5918</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.44">10:50:12.684 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:-12}
+
+10:50:13.169 response time in milliseconds: 477
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 85
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;55-3NJFE9qzyrbuIKNESN7DIOtgrK8&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501012&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501012&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 998
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=70
+1 &lt; CF-RAY: 994bcb71d82c88f5-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;userId&quot;: -12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.userId == &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.3:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">VariableBoundaryValidation</a><a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.3:51]</span>
+                <span class="scenario-name">The userId value is accept zero Integer</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5576</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.3:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.3:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5569</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.44">10:50:12.678 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:0}
+
+10:50:12.954 response time in milliseconds: 274
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 83
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;53-DGBqLqe1PVM4UFDXmJ4453l+cUs&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501012&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501012&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 996
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=19,cfOrigin;dur=72
+1 &lt; CF-RAY: 994bcb71fde2ce58-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;userId&quot;: 0,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.userId == &quot;#number&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.1:65]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.1:65]</span>
+                <span class="scenario-name">The API response body has a valid key value as inputed payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5677</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.1:65]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.1:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.1:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.1:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.1:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5560</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.57">10:50:12.678 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}
+
+10:50:13.002 response time in milliseconds: 323
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:12 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;54-3s8W8w2GxPo0WXYdWfItyVF0+Ng&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501012&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4Y7MwUu%2Fjh6%2FkvH4W4u4tzAadp5%2Bn42eZqZG53ZzK%2Fo%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501012&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 995
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=11,cfOrigin;dur=73
+1 &lt; CF-RAY: 994bcb7229cccf1e-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;userId&quot;: 12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedValue = {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.title == &quot;#string? _ == expectedValue.title&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == &quot;#string? _ == expectedValue.body&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.userId == &quot;#number? _ == expectedValue.userId&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.2:66]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.2:66]</span>
+                <span class="scenario-name">The API response body has a valid key value as inputed payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>446</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.2:66]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.2:66]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.2:66]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.2:66]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.2:66]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;new&quot;,&quot;body&quot;:&quot;movie&quot;,&quot;userId&quot;:123}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">366</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.57">10:50:12.997 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 43
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;new&quot;,&quot;body&quot;:&quot;movie&quot;,&quot;userId&quot;:123}
+
+10:50:13.357 response time in milliseconds: 358
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 69
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;45-NKbawMk6zWMAIJix/0d0h5aFDOc&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 993
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=8,cfOrigin;dur=71
+1 &lt; CF-RAY: 994bcb73bd5f2289-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;new&quot;,
+  &quot;body&quot;: &quot;movie&quot;,
+  &quot;userId&quot;: 123,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedValue = {&quot;title&quot;:&quot;new&quot;,&quot;body&quot;:&quot;movie&quot;,&quot;userId&quot;:123}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.title == &quot;#string? _ == expectedValue.title&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == &quot;#string? _ == expectedValue.body&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.userId == &quot;#number? _ == expectedValue.userId&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.3:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.3:67]</span>
+                <span class="scenario-name">The API response body has a valid key value as inputed payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>411</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.3:67]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;information&quot;,&quot;body&quot;:&quot;hello world&quot;,&quot;userId&quot;:-12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">321</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.57">10:50:12.998 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;information&quot;,&quot;body&quot;:&quot;hello world&quot;,&quot;userId&quot;:-12}
+
+10:50:13.312 response time in milliseconds: 308
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 83
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;53-tD0lbiWhYPD5uSpBibig/HjqrWs&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 994
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=5,cfOrigin;dur=69
+1 &lt; CF-RAY: 994bcb73ad867c86-LAX
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;information&quot;,
+  &quot;body&quot;: &quot;hello world&quot;,
+  &quot;userId&quot;: -12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedValue = {&quot;title&quot;:&quot;information&quot;,&quot;body&quot;:&quot;hello world&quot;,&quot;userId&quot;:-12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.title == &quot;#string? _ == expectedValue.title&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == &quot;#string? _ == expectedValue.body&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.userId == &quot;#number? _ == expectedValue.userId&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.4:68]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.4:68]</span>
+                <span class="scenario-name">The API response body has a valid key value as inputed payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>336</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.4:68]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.4:68]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.4:68]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.4:68]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.4:68]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;12345&quot;,&quot;body&quot;:&quot;12345&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">318</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.57">10:50:13.069 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 43
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;12345&quot;,&quot;body&quot;:&quot;12345&quot;,&quot;userId&quot;:0}
+
+10:50:13.382 response time in milliseconds: 310
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 69
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;45-I0FS5b/d/x1IIYxgdw46r8se9eA&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 992
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=5,cfOrigin;dur=75
+1 &lt; CF-RAY: 994bcb740c45e4ec-LAX
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;12345&quot;,
+  &quot;body&quot;: &quot;12345&quot;,
+  &quot;userId&quot;: 0,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedValue = {&quot;title&quot;:&quot;12345&quot;,&quot;body&quot;:&quot;12345&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.title == &quot;#string? _ == expectedValue.title&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == &quot;#string? _ == expectedValue.body&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.userId == &quot;#number? _ == expectedValue.userId&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.5:69]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.5:69]</span>
+                <span class="scenario-name">The API response body has a valid key value as inputed payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>508</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.5:69]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.5:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="5.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.5:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="5.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.5:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.5:69]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;!@#$%^&amp;*()_+&quot;,&quot;body&quot;:&quot;!@#$%^&amp;*()_+&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">491</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.57">10:50:13.147 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 57
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;!@#$%^&amp;*()_+&quot;,&quot;body&quot;:&quot;!@#$%^&amp;*()_+&quot;,&quot;userId&quot;:0}
+
+10:50:13.622 response time in milliseconds: 473
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 83
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;53-t2m0R+DogNESs6TTf8mqeazD+7M&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 990
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=6,cfOrigin;dur=208
+1 &lt; CF-RAY: 994bcb7568b3152b-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;!@#$%^&amp;*()_+&quot;,
+  &quot;body&quot;: &quot;!@#$%^&amp;*()_+&quot;,
+  &quot;userId&quot;: 0,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedValue = {&quot;title&quot;:&quot;!@#$%^&amp;*()_+&quot;,&quot;body&quot;:&quot;!@#$%^&amp;*()_+&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.title == &quot;#string? _ == expectedValue.title&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == &quot;#string? _ == expectedValue.body&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.userId == &quot;#number? _ == expectedValue.userId&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.6:70]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.6:70]</span>
+                <span class="scenario-name">The API response body has a valid key value as inputed payload</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>404</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.6:70]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.6:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">66</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="6.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.6:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="6.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.6:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.6:70]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;abc123!@#&quot;,&quot;body&quot;:&quot;abc123!@#&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">83</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">202</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.57">10:50:13.431 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 51
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;abc123!@#&quot;,&quot;body&quot;:&quot;abc123!@#&quot;,&quot;userId&quot;:0}
+
+10:50:13.609 response time in milliseconds: 176
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 77
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;4d-RzOwwKCBQe/13wOKUFFvkrvTWgE&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 991
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=8,cfOrigin;dur=72
+1 &lt; CF-RAY: 994bcb762e05cee5-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;abc123!@#&quot;,
+  &quot;body&quot;: &quot;abc123!@#&quot;,
+  &quot;userId&quot;: 0,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def expectedValue = {&quot;title&quot;:&quot;abc123!@#&quot;,&quot;body&quot;:&quot;abc123!@#&quot;,&quot;userId&quot;:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.title == &quot;#string? _ == expectedValue.title&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.body == &quot;#string? _ == expectedValue.body&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.userId == &quot;#number? _ == expectedValue.userId&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.1:97]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.1:97]</span>
+                <span class="scenario-name">The &quot;title&quot; value accept &quot;non-empty&quot; String and &quot;body&quot; value accept &quot;non-empty&quot; String</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>296</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.1:97]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.1:97]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.1:97]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.1:97]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.1:97]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">277</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.76">10:50:13.447 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}
+
+10:50:13.713 response time in milliseconds: 264
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;54-3s8W8w2GxPo0WXYdWfItyVF0+Ng&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 988
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=7,cfOrigin;dur=70
+1 &lt; CF-RAY: 994bcb765a8915da-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;userId&quot;: 12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.78">
+      <div class="step-ref failed">78</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.78">10:50:13.727 classpath:features/PostRequest.feature:78
+* def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&quot;../helper/CheckEmptyValue.js&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\PANKAJ KUMAR SAO\poc\karate-api-test\build\resources\test\features\..\helper\CheckEmptyValue.js (The system cannot find the path specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/PostRequest.feature:78
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def expectedValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.79">{ 
+    title:&quot;#(supportFunction(payload.title, &#39;non-empty&#39;))&quot;,
+    body:&quot;#(supportFunction(payload.body, &#39;non-empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def actualValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.86">{ 
+    title:&quot;#(supportFunction(response.title, &#39;non-empty&#39;))&quot;,
+    body:&quot;#(supportFunction(response.body, &#39;non-empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match actualValue == expectedValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.2:98]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.2:98]</span>
+                <span class="scenario-name">The &quot;title&quot; value accept &quot;empty&quot; String and &quot;body&quot; value accept &quot;non-empty&quot; String</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>257</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.2:98]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.2:98]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.2:98]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.2:98]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.2:98]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">230</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.76">10:50:13.448 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 44
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}
+
+10:50:13.671 response time in milliseconds: 221
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 70
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;46-ovtbfVARM/g/iOESCM/jD+sCP+k&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 989
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=11,cfOrigin;dur=72
+1 &lt; CF-RAY: 994bcb764ff2cf2e-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;&quot;,
+  &quot;body&quot;: &quot;motorcycle&quot;,
+  &quot;userId&quot;: 12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = {&quot;title&quot;:&quot;&quot;,&quot;body&quot;:&quot;motorcycle&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.78">
+      <div class="step-ref failed">78</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.78">10:50:13.684 classpath:features/PostRequest.feature:78
+* def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&quot;../helper/CheckEmptyValue.js&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\PANKAJ KUMAR SAO\poc\karate-api-test\build\resources\test\features\..\helper\CheckEmptyValue.js (The system cannot find the path specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/PostRequest.feature:78
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def expectedValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.79">{ 
+    title:&quot;#(supportFunction(payload.title, &#39;empty&#39;))&quot;,
+    body:&quot;#(supportFunction(payload.body, &#39;non-empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def actualValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.86">{ 
+    title:&quot;#(supportFunction(response.title, &#39;empty&#39;))&quot;,
+    body:&quot;#(supportFunction(response.body, &#39;non-empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match actualValue == expectedValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.3:99]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.3:99]</span>
+                <span class="scenario-name">The &quot;title&quot; value accept &quot;non-empty&quot; String and &quot;body&quot; value accept &quot;empty&quot; String</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>298</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.3:99]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.3:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.3:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.3:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.3:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">287</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.76">10:50:13.442 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;&quot;,&quot;userId&quot;:12}
+
+10:50:13.720 response time in milliseconds: 264
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 74
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;4a-flxma8OuO1yJOD0OBCpqUEOpwoY&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 987
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=3,cfOrigin;dur=70
+1 &lt; CF-RAY: 994bcb766ce0152b-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;recommendation&quot;,
+  &quot;body&quot;: &quot;&quot;,
+  &quot;userId&quot;: 12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = {&quot;title&quot;:&quot;recommendation&quot;,&quot;body&quot;:&quot;&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.78">
+      <div class="step-ref failed">78</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.78">10:50:13.733 classpath:features/PostRequest.feature:78
+* def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&quot;../helper/CheckEmptyValue.js&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\PANKAJ KUMAR SAO\poc\karate-api-test\build\resources\test\features\..\helper\CheckEmptyValue.js (The system cannot find the path specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/PostRequest.feature:78
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def expectedValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.79">{ 
+    title:&quot;#(supportFunction(payload.title, &#39;non-empty&#39;))&quot;,
+    body:&quot;#(supportFunction(payload.body, &#39;empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def actualValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.86">{ 
+    title:&quot;#(supportFunction(response.title, &#39;non-empty&#39;))&quot;,
+    body:&quot;#(supportFunction(response.body, &#39;empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match actualValue == expectedValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5.4:100]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Post</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">InputValidation</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5.4:100]</span>
+                <span class="scenario-name">The &quot;title&quot; value accept &quot;empty&quot; String and &quot;body&quot; value accept &quot;empty&quot; String</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>250</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5.4:100]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5.4:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultHeader =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.8">{
+                &quot;Content-Type&quot;: &quot;application/json&quot; 
+            }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.4:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def defaultPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.14">{ 
+    userId: 12, 
+    title: &quot;recommendation&quot;, 
+    body: &quot;motorcycle&quot; 
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.4:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.22">
+      <div class="step-ref bg-step">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://jsonplaceholder.typicode.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5.4:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.23">
+      <div class="step-ref bg-step">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/posts&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>headers defaultHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;title&quot;:&quot;&quot;,&quot;body&quot;:&quot;&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">206</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.76">10:50:13.684 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 34
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;&quot;,&quot;body&quot;:&quot;&quot;,&quot;userId&quot;:12}
+
+10:50:13.882 response time in milliseconds: 196
+1 &lt; 201
+1 &lt; Date: Sun, 26 Oct 2025 17:50:13 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 60
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: Location
+1 &lt; Cache-Control: no-cache
+1 &lt; etag: W/&quot;3c-K8w83+gMlJGIE3NiyO93atJjzK8&quot;
+1 &lt; expires: -1
+1 &lt; location: https://jsonplaceholder.typicode.com/posts/101
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1761501013&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=ylw%2FDkM8EKyCC7j1Vpy%2FXvVVy5pjXaA%2BPIBD7qU1x00%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761501013&quot;
+1 &lt; Server: cloudflare
+1 &lt; vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 986
+1 &lt; x-ratelimit-reset: 1761501055
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=7,cfOrigin;dur=74
+1 &lt; CF-RAY: 994bcb77da29169e-SJC
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;title&quot;: &quot;&quot;,
+  &quot;body&quot;: &quot;&quot;,
+  &quot;userId&quot;: 12,
+  &quot;id&quot;: 101
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload = {&quot;title&quot;:&quot;&quot;,&quot;body&quot;:&quot;&quot;,&quot;userId&quot;:12}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.78">
+      <div class="step-ref failed">78</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.78">10:50:13.899 classpath:features/PostRequest.feature:78
+* def supportFunction = read(&quot;../helper/CheckEmptyValue.js&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&quot;../helper/CheckEmptyValue.js&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: C:\Users\PANKAJ KUMAR SAO\poc\karate-api-test\build\resources\test\features\..\helper\CheckEmptyValue.js (The system cannot find the path specified)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/PostRequest.feature:78
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def expectedValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.79">{ 
+    title:&quot;#(supportFunction(payload.title, &#39;empty&#39;))&quot;,
+    body:&quot;#(supportFunction(payload.body, &#39;empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def actualValue =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.86">{ 
+    title:&quot;#(supportFunction(response.title, &#39;empty&#39;))&quot;,
+    body:&quot;#(supportFunction(response.body, &#39;empty&#39;))&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match actualValue == expectedValue</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
